@@ -135,7 +135,7 @@ label {
 }
 .panel-login>.panel-heading .register {
   padding: 20px 30px;
-  background: #2d3b55;
+  background: #5588C5;
   border-bottom-right-radius: 5px;
 }
 .panel-login>.panel-heading a{
@@ -155,8 +155,18 @@ label {
 .panel-login>.panel-heading a#login-form-link {
   width: 100%;
   text-align: center;
+    
 }
 
+.login,.register{
+    background-color:  #5588C5;
+    color:#fff;
+}
+
+.register,.login{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 .panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
   height: 45px;
   border: 0;
@@ -181,7 +191,7 @@ label {
 .btn-login {
   background-color: #E8E9EC;
   outline: none;
-  color: #2D3B55;
+  color: #5588C5;
   font-size: 14px;
   height: auto;
   font-weight: normal;
@@ -194,7 +204,7 @@ label {
 .btn-login:hover,
 .btn-login:focus {
   color: #fff;
-  background-color: #2D3B55;
+  background-color: #5588C5;
 }
 .forgot-password {
   text-decoration: underline;
@@ -209,7 +219,7 @@ label {
 .btn-register {
   background-color: #E8E9EC;
   outline: none;
-  color: #2D3B55;
+  color: #5588C5;
   font-size: 14px;
   height: auto;
   font-weight: normal;
@@ -222,6 +232,6 @@ label {
 .btn-register:hover,
 .btn-register:focus {
   color: #fff;
-  background-color: #2D3B55;
+  background-color: #5588C5;
 }
 

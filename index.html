@@ -10,7 +10,10 @@
     <script>
         
     $(document).ready(function() {
+        $('#log-btn').hide();
     $('#login-form-link').click(function(e) {
+        $('#log-btn').hide();
+        $('#reg-btn').show();
     	$("#login-form").delay(100).fadeIn(100);
  		$("#register-form").fadeOut(100);
 		$('#register-form-link').removeClass('active');
@@ -18,6 +21,8 @@
 		e.preventDefault();
 	});
 	$('#register-form-link').click(function(e) {
+        $('#log-btn').show();
+        $('#reg-btn').hide();
 		$("#register-form").delay(100).fadeIn(100);
  		$("#login-form").fadeOut(100);
 		$('#login-form-link').removeClass('active');
@@ -88,11 +93,11 @@
         </div>
         <div class="panel-heading">
           <div class="row">
-            <div class="col-xs-6 tabs text-center">
-              <a href="#" class="active" id="login-form-link"><div class="login">LOGIN</div></a>
+            <div class="col-xs-12 tabs text-center" id="log-btn">
+              <a href="#" class="active" id="login-form-link"><div class="login">Already have an account?</div></a>
             </div>
-            <div class="col-xs-6 tabs text-center">
-              <a href="#" id="register-form-link"><div class="register">REGISTER</div></a>
+            <div class="col-xs-12 tabs text-center" id="reg-btn">
+              <a href="#" id="register-form-link"><div class="register">Don't have account?</div></a>
             </div>
           </div>
         </div>
